@@ -1,0 +1,12 @@
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{{ url_for('static', filename='style.css') }}"
+/>
+
+<h1>welcome</h1>
+<div class="box-hut">
+  {% for i in range(0,num)%}
+  <div class="box" id="box" style="background-color: {{color}};">text</div>
+  {% endfor %}
+</div>
